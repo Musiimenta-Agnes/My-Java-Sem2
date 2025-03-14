@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+</head>
+<body>
+  
+    <h1>DATA TYPES</h1>
+    <h3>When adding a number to a string, java script treates the number as a string.</h3>
+    <p  style="color: brown;">Java script evaluates expressions from the left. Forexample</p>
+    <p  id="demo"></p>
+    <script>
+        let x = 56 + "Musiimenta Agnes"
+        document.getElementById('demo').innerHTML = x;
+    </script>
+    <br><br>
+
+ <p  style="color: brown;">Java script evaluates expressions from the left. Forexample</p>
+ <p  id="data type"></p>
+    <script>
+        let y =  "Musiimenta Agnes"  + 56
+        document.getElementById('data type').innerHTML = y;
+    </script>
+    <br><br>
+    <h3>Java Script data types are dynamic</h3>
+    <p  style="text-decoration: underline;">This means that the same variable can be used to hold different data types</p>
+    <p id=" dynamic"></p>
+    <script>
+        let r; // now x is undefined
+        let m = 5; // now x is a number
+        let n = 'Agnes';  // now n is a string
+
+
+        document.getElementById('dynamic').innerHTML = M + n;
+    </script>
+
+   <br><br>
+    <H3>Exponential Notation</H3>
+    <P  style="text-decoration: underline;">Extra large or extra small numbers can be written with scientific (exponential) notation</P>
+    <p id="number"></p>
+    <script>
+        let number = 1234e4 // This returns 12340000. (The e4 represents four zeeros.)
+        document.getElementById('number').innerHTML = 'The number here is 1234e4 and it will return' + number + 'and the e4 represents four zeros';
+    </script>
+    <br>
+    <h3>JavaScript BigInt</h3>
+    <p>JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be  <br>
+        represented by a normal JavaScript Number.
+        </p>
+        <h4>You cannot perform math between a BigInt type and a Number type.</h4>
+        <p id="big int"></p>
+        <script>
+            let bignumber1 = BigInt(34646466466646);
+            let bignumber2 = BigInt(33533377363556) ;
+            let answer = bignumber1 + bignumber2;
+            document.getElementById('big int').innerHTML = 'We are adding bignumber and second in our code and the answer is ' + answer;
+        </script>
+        <br>
+        <h3>JavaScript Booleans </h3>
+        <p>Booleans can only have two values: true or false</p>
+        <p id="boolean"></p>
+        <script>
+            let num1 = 56;
+            let num2 = 456;
+            let num3 = 56;
+            document.getElementById('boolean').innerHTML = 'Here we are checking whether num1 is equal to num3 and the answer is'  +    (num1 == num3) + "<br>"
+            + 'This is checking whether num2 is equal to num3 and the answer is ' +    (num2 == num3);
+        </script>
+
+
+<script>
+    let result = (4+4);
+    console.log(result);
+    
+</script>
+<br>
+<h3>The immutable data types.</h3>
+<script>
+    let greeting = 'Hello';
+greeting = 'Hi';  // Reassigning to a new string value
+console.log(greeting); 
+</script>
+</body>
+</html>

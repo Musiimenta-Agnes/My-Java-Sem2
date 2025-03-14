@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+
+
+
+    <h1>OBJECTS</h1>
+    <h2>Accesing the value of the color variable</h2>
+    <p id="demo"></p>
+    <script>
+        const phone = {color:'Red', storage:'68GB', name:'Iphone'};
+        document.getElementById('demo').innerHTML =  'The color of my phone is :' + ' ' + phone.color;
+    </script>
+  
+
+
+
+    <h2>Accessing the value of the car varible</h2>
+    <p id="model"></p>
+    <script>
+        const car = 'Fait';
+        document.getElementById('model').innerHTML = 'The car name is Car:' + ' ' + car;
+    </script>
+
+
+
+
+
+    <br><br>
+    <br>
+    <h2>Objects are Mutable</h2>
+
+<p>Changes to a copy of an object will also change the original object:</p>
+
+<p id="person"></p>
+
+<script>
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age:50,
+  eyeColor: "blue"
+};
+
+// Create a Copy
+const x = person;
+
+// Change Age
+x.age = 10;
+
+document.getElementById("person").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+
+
+
+
+<h1>ADDING A METHOD TO AN OBJECT</h1>
+<p id="deo"></p>
+
+<script>
+// Create an Object
+const pers = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+};
+
+// Add a Method
+pers.name = function() {
+  return (this.firstName + " " + this.lastName).toUpperCase();
+};
+
+// Display Object Data
+document.getElementById("deo").innerHTML =
+"My father is " + pers.name(); 
+</script>
+
+<b><br><br></b>
+
+
+<p id="id"></p>
+
+
+</body>
+</html>

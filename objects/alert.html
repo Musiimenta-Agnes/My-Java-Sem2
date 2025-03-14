@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerting an element using a button</title>
+
+    <style>
+        #colordiv {
+            
+            background-color: chartreuse;  /*default color*/
+            transition: background-color 0.3s ease;  /* Smooth transition for color change */
+         }
+    </style>
+</head>
+<body>
+
+
+    <h2>Qn.1 Write a button element, it should do something e.g Alert Jane when someone clicks on it</h2>
+    <h3>When this button is clicked, it should alert John.</h3>
+    <br>
+    <button onclick="alert('John')">click me</button>
+
+
+
+    <br>
+    <h2>Qn.2 Make a html text input which logs the value when the input is changing. </h2>
+    
+    <script>
+        //This is th function that logs the input when it changes.
+        function LogInputValue (event){
+            console.log(event.target.value); // Logs the current value of the input field to the console.
+        };
+    </script>
+
+   <!-- Label for the input field -->
+    <label for="textInput">Enter text: </label>
+    <br>
+    <!-- The input field. The "oninput" event triggers the function every time the user types -->
+    <input type="text" id="textInput" oninput="LogInputValue(event)">
+
+
+
+
+
+     <br><br>
+     <h2>Qn.3 Write a div element which turns red when someone moves the mouse over it.</h2>
+
+     <script>
+        //Function to change the background color when mouse is over the div
+
+        function ChangeColorToRed() {
+            document.getElementById('colordiv').style.backgroundColor = 'red';
+        }
+
+         // Function to reset the background color when mouse leaves the div
+
+         function resetColor() {
+            document.getElementById('colordiv').style.backgroundColor = "grey"
+         }
+     </script>
+
+    <!-- Div element that will change color on mouseover -->
+
+
+    <div  id="colordiv"  onmouseover="ChangeColorToRed()"  onmouseout="resetColor()">
+       Hover on me and see &hearts;
+    </div>
+
+<!--This can also work-->
+    <!--<button  id="colordiv"  onmouseover="ChangeColorToRed()"  onmouseout="resetColor()">&hearts;</button>
+
+
+
+</body>
+
+</html>

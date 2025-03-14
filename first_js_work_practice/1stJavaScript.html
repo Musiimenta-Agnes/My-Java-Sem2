@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Java Script Document</title>
+</head>
+<body>
+    <h1 style="font-size: 46px; color: rgb(12, 31, 237); text-decoration: underline; font-family: 'Times New Roman', Times, serif; text-align: center; text-transform: uppercase;"><b>My Java Script</b></h1>
+    <br>
+    <h2>This is an exammple of how java script changes elements of HTLM</h2>
+    <P>We can view this using this example below.</P>
+    <button type="button"  onclick="document.getElementById('demo').innerHTML = Date()"  style="background-color: orangered; color: white; border-style: none; border-radius: 8px; height: 50px;">
+click me to view today's date and time.
+    </button>
+    <p id="demo"></p>
+    <br><br>
+    <h2><b>Lets see this second example below by changing the word Agnes to "Hello Musiimenta Agnes"</b></h2>
+
+    <button type="button" onclick="document.getElementById('Agnes').innerHTML = ('Hello Musiimenta Agnes')"  style="background-color: rgb(0, 255, 64); color: rgb(215, 49, 49); border-style: none; border-radius: 8px; height: 50px; font-size: 15px;">
+Click on me and display a message to Agnes.
+    </button>
+    <p  id="Agnes"></p>
+
+    <br>
+    <h2><b>Another example using bulbs.</b></h2>
+    <button type="button"  onclick="document.getElementById('bulb').src='./bulb.jfif' ">Turn On</button>
+
+    <img   id="bulb"   src="./bulb.jfif" alt=""  style="width: 100px;">
+
+    <button type="button"  onclick="document.getElementById('bulb').src='./off.png'   ">Turn Off</button>
+
+<br><br><br>
+    <h1><b>JAVA SCRIPT IN BODY</b></h1>
+
+
+    <button type="button"  onclick="myFunction()">Click me!</button>
+    
+    <P id="agie"></P>
+
+    <script>
+        function myFunction() {
+            document.getElementById('agie').innerHTML = "I come from Masaka and I am 21 years old.";
+        }
+    </script>
+
+ <br><br><br>
+ <h1><b>How Java Script changes the styles of HTML elements!</b></h1>
+<p  id="cool">My name is Musiineta Agnes</p>
+<button  type="button"
+ onclick="document.getElementById('cool').style.fontSize = '50px'">Click me and see</button>
+
+
+<p>Here is an example</p>
+
+ <button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+</script>
+</body>
+</html>
