@@ -1,0 +1,56 @@
+//3. 
+
+
+
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+       </head>
+       <body>
+        <h3>Write a javascript function to return the maximum of 3 numbers.
+            Prompt for 3 inputs (You can choose to use just input)
+            Convert to numbers
+            Pass to the function
+            Use Math.max to get the maximum.
+            End up with something like this in the UI.</h3>
+
+
+
+            <h2>The maximum of the following  three numbers</h2>
+
+            <label for="num1">Number 1: </label>
+    <input type="number" id="num1"><br><br>
+    <label for="num2">Number 2: </label>
+    <input type="number" id="num2"><br><br>
+    <label for="num3">Number 3: </label>
+    <input type="number" id="num3"><br><br>
+    <button onclick="findMax()">Find Maximum</button>
+    <p id="result"></p>
+
+            
+            <p id="result"></p>
+
+            <script>
+                function findMax() {
+                    // Get input values
+                    let num1 = parseFloat(document.getElementById('num1').value);
+                    let num2 = parseFloat(document.getElementById('num2').value);
+                    let num3 = parseFloat(document.getElementById('num3').value);
+        
+                  
+        
+                    // Use Math.max to get the largest number
+                    let max = Math.max(num1, num2, num3);
+        
+                    // Display the result
+                    document.getElementById('result').innerText = `The maximum number is: ${max}`;
+                }
+            </script>
+
+
+
+       </body>
+       </html>  

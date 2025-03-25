@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Square Numbers from 1 to 10</h1>
+
+    <!-- Section to display results -->
+    <div id="output"></div>
+
+    <script>
+        // Step 1: Define a reusable function to square a number
+        function squareNumber(num) {
+            return num * num;  // Return the square of the number
+        }
+
+        // Step 2: Loop from 1 to 10 and call the squareNumber function for each number
+        let outputDiv = document.getElementById('output');  // To display the output in the browser
+        
+        let resultHtml = '';  // String to accumulate results for display
+
+        for (let i = 1; i <= 10; i++) {
+            let square = squareNumber(i);  // Call the squareNumber function for each number
+            resultHtml += `<p>The square of ${i} is: ${square}</p>`;  // Add the result to the output
+        }
+
+        // Step 3: Output the result to the browser
+        outputDiv.innerHTML = resultHtml;  // Insert the results into the HTML page
+    </script>
+</body>
+</html>

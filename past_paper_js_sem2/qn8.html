@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Write a js function to change the text color on mouseover</p>
+
+    <h4 id="color"  onmousemove="changeColor()"  onmouseout="resetColor()" >My name is Musiimenta Agnes</h4>
+
+    <script>
+        function changeColor(){
+            document.getElementById('color').style.color = 'red';
+        }
+
+
+        //This the function to take it back to its normal color when the mouse is removed.
+        function resetColor(){
+            document.getElementById('color').style.color = 'white';
+        }
+
+    </script>
+</body>
+</html>

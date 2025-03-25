@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>  (Qn 2).Write a javascript function to square numbers(Make it reusable optional)
+        For loop 1 to 10 — Won’t hard code this
+        Pass each number as argument to square
+        Return value of argument multiplied by itself
+        Display result like this</h3>
+
+
+        <br><br>
+        <h3>Square Numbers from 1 to 10 </h3>
+        <br>
+
+        <p id="resultList"></p>
+    
+        <script>
+            // Function to square a number
+            function squareNumber(num) {
+                return num * num;
+            }
+    
+            // Loop from 1 to 10 and display the square of each number
+            for (let i = 1; i <= 10; i++) {
+                // Create a new list item
+                let listItem = document.createElement('li');
+    
+                // Set the text content to show the square of the number
+                listItem.textContent = `The square of ${i} is ${squareNumber(i)}`;
+    
+                // Append the list item to the result list
+                document.getElementById("resultList").appendChild(listItem);
+            }
+        </script>
+
+     
+</body>
+</html>

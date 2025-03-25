@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATIONS TABLE</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit(); return ralse;">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label for="name">EMP Code</label>
+                        <input type="number" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label for="name">Salary</label>
+                        <input type="number" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label for="name">City</label><br>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+
+            </td> <!--html form for crus oprations-->
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </td>  <!--table to list all records-->
+        </tr>
+    </table>
+    <script src="./style.css"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Qn(6). Writ a javascript function to square numbers from 1 to 6. Display the results as unordered list with such a statement for all 6 numbers.
+          ie the the square of 1 is 1.</p>
+          <br>
+
+
+           <p id="demo"></p>
+          <script>
+            function squareNumbers(num){
+                return num * num;
+            }
+            let results = `<ol>`;
+                for (let i = 1; i <= 6; i++){
+                    results +=  `The square number of ` + i + " " + "is" + " " + squareNumbers(i) + `<br>`;  //We add the <br> tag inorder to put spaces between the lines of code.
+                    
+                }
+            results += `</ol>`
+            
+            document.getElementById('demo').innerHTML = results;
+      
+          </script>
+
+<br><br>
+
+<!--The squre of numbers from 1 to 10-->
+<h2 id="output"></h2>
+<script>
+    function squareNumberOfOneToSix(number){
+        return number * number;
+    }
+    result = `<ol>`;
+
+    for (let i = 1; i <= 10; i++){
+        result += `The square of ` + i + " " + 'is ' + " " + squareNumberOfOneToSix(i) + `<br>`;
+    }
+
+    result += `</ol>`
+
+    document.getElementById('output').innerHTML = result;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

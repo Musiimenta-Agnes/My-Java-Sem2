@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Qn(1): Create an object to store the following information about your favorite movie: title(a string),
+        <br> duration(a number), and star(an object of name,country and age strings). <br>
+         Create the function to log the movie information so: "Puff the magic Dragon lasts for 30 minutes. Star: 
+         Puff is 45years old and born in Uganda." (3 marks).</p>
+
+         <br><br>
+         <p id="puff"></p>
+         <script>
+            const favourite_movie = {
+                'title':'Puff the Majic Dragon',
+                'duration': 30,
+                
+                'name': "Puff",
+                'country': "Uganda",
+                'age': "45"
+            }
+
+
+            document.getElementById('puff').innerHTML = favourite_movie.title + " " + "lasts for " + " " + favourite_movie.duration + '.   '
+             + favourite_movie.name + " " + "is" + " " + favourite_movie.age + " " + "born in" + " " + favourite_movie.country;
+
+         </script>
+</body>
+</html>

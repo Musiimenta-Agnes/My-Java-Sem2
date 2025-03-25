@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Write a js function that takes temperature in fahrenheight and returns its equivalent in clcius. 
+        Hint, To concert temp in degrees fahrenhieght to degrees celciu , subtract 32 and multiply by .5556 or (5/9)  </p>
+
+
+
+      <label for="number">Enter Number</label>
+      <input type="number" id="num">
+      <button onclick="toFahr()">Change to Celcius</button>
+      <h3>Result:<span id="result"></span></h3>
+      <script>
+        function toFahr(){
+            let number = parseFloat(document.getElementById("num").value);
+            let result = (number * 5/9) + (32);
+
+            document.getElementById("result").innerHTML = result + " " + "Celcius";
+        }
+      </script>
+</body>
+</html>

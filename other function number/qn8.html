@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>(8). Write a JavaScript function that checks if a number is even or odd.  
+         The user should enter a number, and the result should be displayed as "Even" or "Odd."</h3>
+
+        <h2>Checking whether the number is even or odd</h2>
+        <input type="number" id="inputNumber" placeholder="Enter number"><br><br>
+
+        <button  onclick="checkEvenOrOdd()">Check odd or even</button>
+
+        <p id="result"></p>
+
+        <script>
+            function checkEvenOrOdd(){
+               let number = document.getElementById('inputNumber').value;
+           
+
+            if (number % 2 === 0){
+                document.getElementById('result').innerHTML = 'Even';
+            }
+            else {
+                document.getElementById('result').innerHTML = 'Odd';
+            }
+        }
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

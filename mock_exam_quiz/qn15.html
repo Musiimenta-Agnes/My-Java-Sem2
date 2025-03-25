@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>5. Given an array let numbers = [3, 8, 1, 6, 10], write a function to return the highest 
+        number in the array.</p>
+  
+<p id="reads"></p>
+<script>
+    function findHighestNumber(numbers){
+        return Math.max(...numbers);
+
+    }
+    let numbers = [3, 8, 1, 6, 10];
+    let highestNumber = findHighestNumber(numbers);
+
+    document.getElementById("reads").innerHTML = "The highest number ing the array is: " + " " + highestNumber;
+</script>
+
+</body>
+</html>
