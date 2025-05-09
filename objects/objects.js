@@ -1,6 +1,6 @@
 
-//Accessing the elemnts in an object.
-//You type the objectname.the name of the property you want
+//Accessing the elemEnts in an object.
+//You type the object name the name of the property you want
 const phone = {color:'Red', storage:'68GB', name:'Iphone'}
 console.log(phone.name)
 

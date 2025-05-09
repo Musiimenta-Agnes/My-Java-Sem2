@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To do List</title>
+    <style>
+      .text {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.5s;
+        font-size: 24px;
+        font-family: sans-serif;
+      }
+      .show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+</head>
+<body>
+   <h1>LIST OF MOVIES I HAVE WATCHED</h1> 
+
+   <ul id="list">
+    <li>Carry On</li>
+   </ul>
+
+
+   <h1>My Book List</h1>
+  
+   <form id="bookForm">
+     <input type="text" id="bookInput" placeholder="Enter book title" required />
+     <button type="submit">Add Book</button>
+   </form>
+ 
+   <ul id="bookList"></ul>
+ 
+  
+    
+  <!--This is to make auto typing of a word on page load-->
+
+    
+  <div id="myText" class="text"></div>
+
+  <script>
+    const text = "Hello, welcome!";
+    const element = document.getElementById("myText");
+    let i = 0;
+
+    function type() {
+      element.classList.add("show");
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, 100); // 100ms delay between letters
+      }
+    }
+
+    window.onload = type;
+  </script>
+   
+   
+   
+   
+   <script src="./script.js"></script>
+</body>
+</html>

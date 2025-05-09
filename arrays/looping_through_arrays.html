@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop through an array.</title>
+</head>
+<body>
+    
+ 
+    <p id="array"></p>
+    <script>
+        let array = ['Agnes', 'Abias', 'Dankani', 'Osiriah', 'Wilber'];
+        let arrayLength = array.length;
+        let order = `<ul>`;
+            for (i = 0; i <= arrayLength; i ++){
+                order += `<li>` + array[i] + `</li>`;
+            }
+            order += `</ul>`;
+            document.getElementById('array').innerHTML = order;
+    </script>
+
+
+
+<!--Finding the squareroots of all even nubers less than 100-->
+<p id="squares"></p>
+<script>
+function findSquareRootsOfEvens() {
+    const results = [];
+    
+    for (let i = 2; i <= 100; i += 2) {  // Iterate over even numbers from 2 to 100
+      const squareRoot = Math.sqrt(i);   // Calculate square root
+      results.push({ number: i, squareRoot: squareRoot });
+    }
+  
+    return results;
+  }
+  document.getElementById('squares').innerHTML = squareRoot;
+ 
+</script>
+
+
+
+
+
+<h4>Reversing of arrays</h4>
+<p>Reverse this array: ["Jan", "Feb", "Mar", "Apr"]</p>
+
+<p id="demo"></p>
+
+<script>
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const reversed = months.toReversed();
+
+document.getElementById("demo").innerHTML = 'The reversed array is:' + ' ' + reversed;
+</script>
+
+
+
+
+<h5>Loop through these numbers from 1 to 10</h5>
+<p id="numbers"></p>
+
+</body>
+</html>

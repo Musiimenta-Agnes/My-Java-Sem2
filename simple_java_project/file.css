@@ -1,0 +1,10 @@
+.form {
+    margin: 30px 30px;
+    border-style: 1px solid;
+    width: 500px;
+    height: 500px;
+}
+
+input[type="number"],input[type="text"]{
+    width: 100%;
+}

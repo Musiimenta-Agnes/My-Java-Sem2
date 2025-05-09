@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-   <p>Write a  program to print Fibonacci Numbers to 100. Hint, Fibonacci numbers refer to a seris of numbers in which each number is the sum of the two preedeedign numbers. The simplest is the series: 1,1,2,3,5,8  </p> 
+   <p>Write a  program to print Fibonacci Numbers to 100. Hint, Fibonacci numbers refer to a seris of numbers in which each number is the sum of 
+    the two preedeedign numbers. The simplest is the series: 1,1,2,3,5,8  </p> 
+
+    <script>
+        // Function to print Fibonacci numbers up to 100
+function fibonacciUpto100() {
+    // Starting numbers of the Fibonacci series
+    let a = 0, b = 1;
+    
+    // Print Fibonacci numbers until the value exceeds 100
+    while (a <= 100) {
+        console.log(a);
+        // Update the numbers
+        let next = a + b;
+        a = b;
+        b = next;
+    }
+}
+
+// Call the function
+fibonacciUpto100();
+
+    </script>
 </body>
 </html>

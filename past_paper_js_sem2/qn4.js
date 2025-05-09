@@ -6,7 +6,7 @@ function reverseNumber(num){
 console.log(6787);
 //Note: If you define the variable as a  parameter in the funtion, you dont name it again,
 //  but you put its value in the console.log as you are calling the function
-//If you want to caal the function by naming another variable then you rename te variable with another name like in the example below.
+//If you want to call the function by naming another variable then you rename the variable with another name like in the example below.
 //Then call the function by passing in the value of the variable as follows.
 
 
@@ -14,7 +14,7 @@ console.log(6787);
 
 
 
-// This is a different case now.
+// This is a different case now but they do the same things just different approaches
 function multiply(number){
     return number * 2;
   

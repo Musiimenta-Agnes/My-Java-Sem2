@@ -1,14 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert Values Example</title>
+  <script>
+    // Function to alert the value of the clicked element
+    function alertValue(value) {
+      alert("You clicked: " + value);
+    }
+  </script>
 </head>
+
+<p>Make twe html element with alert to alret their values</p>
+
+
 <body>
-    <p>Create two html elements and add onclick events to each to alert their values.</p>
-
-
+  <!-- First element with onclick event -->
+  <button onclick="alertValue('Button 1')">Click Me - Button 1</button>
+  
+  <!-- Second element with onclick event -->
+  <input type="text" value="Input Value" onclick="alertValue(this.value)" />
 
 </body>
 </html>

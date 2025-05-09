@@ -14,3 +14,19 @@ console.log(result1);
 let result2 = excuteSum(4,6);
 console.log(result2)
 
+
+
+
+function sumOfNumbers(a,b){
+    if (a == b){
+        return a + b;
+    }else{
+        return (a + b)*3
+    }
+
+}
+let resultOne = sumOfNumbers(4,4)
+let resultTwo = sumOfNumbers(2,4)
+
+console.log(resultOne)
+console.log(resultTwo)
