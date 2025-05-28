@@ -23,15 +23,18 @@
 // console.log("The number of vowel in Musiimenta is" + " " + countVowels("Musiimenta Mary"));
 
 
+
 function myFunction(str){
     str = str.toLowerCase();
     let vowels = 'aeiou';
     let count = 0;
 
-    for( let i = 0; i > str.length; i++){
+    for( let i = 0; i < str.length; i++){
         if( vowels.includes(str[i]) ){
-            return count ++;
+             count ++;
         }
 
     }
+    return count
 }
+console.log(myFunction('Musiimenta'))

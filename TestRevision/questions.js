@@ -60,17 +60,14 @@ for(let i = 0; i < institute.length; i++){
 
 // Write a JavaScript function that accepts a string as a parameter and converts 
 // // the first letter of each word of the string in upper case. (2mks) 
+function capitaliseWord(str){
+   let wording = str.split(' ')
+   let capitalizing = wording.map(function(phrase){return phrase.charAt(0).toLocaleUpperCase() + phrase.slice(1)}).join(' ')
+   return capitalizing;
+}
+console.log(`The capitalised letters of the words are ${capitaliseWord('musiimenta agnes kanungu district')}`)
 
 
-
-
-
-// function capitalizeFirstLetters(str) {
-//    return str.split(' ').map(word => 
-//      word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-//  }
-//  let results = capitalizeFirstLetters("hello world");
-//  console.log(result); //  
 
 
  // Write a function that returns the square of the numbers in an array without changing the array
@@ -98,9 +95,7 @@ console.log(multiple)
 // Using map to return the initials of the name only
 function myNames(names){
    let words = names.trim().split(' ')
-   let initals = words.map(function(word){
-      return word[0].toUpperCase()
-   }).join('');
+   let initals = words.map(function(word){return word[0].toUpperCase()}).join('');
    return initals
 }
 
@@ -296,8 +291,25 @@ console.log(secondLowest([1,5,6,7,2])) // This sorts the array in ascending orde
 // converts the first letter of each word into upper case. Example string : 'the quick brown fox'
 function capitalize(str){
    let splitted = str.split(' ')
-   let capital = splitted.map(function(word) {return word.charAt(0).toUpperCase() + word.slice(1) })
-   return capital.join(' ');
+   let capital = splitted.map(function(word) {return word.charAt(0).toUpperCase() + word.slice(1) }).join(' ')
+   return capital
 }
 console.log(capitalize('my name is musiimenta agnes'))
 
+// console.log("The number of vowel in Musiimenta is" + " " + countVowels("Musiimenta Mary"));
+
+
+function myFunction(str){
+    str = str.toLowerCase();
+    let vowels = 'aeiou';
+    let count = 0;
+
+    for( let i = 0; i < str.length; i++){
+        if( vowels.includes(str[i]) ){
+             count ++;
+        }
+
+    }
+    return count
+}
+console.log(myFunction('Musiimenta'))

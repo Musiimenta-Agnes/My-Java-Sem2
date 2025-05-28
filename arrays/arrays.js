@@ -183,7 +183,7 @@ console.log(result); // [1, 2, 3, 4]
 let fru = ["apple", "banana", "cherry", "date"];
 let sliced = fru.slice(1, 2);
 
-console.log(sliced);  // ["banana", "cherry"]
+console.log(sliced);  // ["banana"]
 console.log(fru);  // ["apple", "banana", "cherry", "date"] — original not changed
 
 
@@ -224,4 +224,53 @@ function evenNum(num){
 console.log(evenNum([2,3,1,4,7,9]))
 
 
+
+
+// Access the word nes from this array
+function my_func(myName){
+    let answer = myName.toLowerCase().slice(2, 5)
+    return answer
+}
+console.log(my_func('Agnes'))
+
+
+//The use of typeof
+let q = 'Agnes'
+let answer = typeof(q)
+console.log(answer)
+
+
+// The use of replace
+let myDistrict = 'Kanungu district'
+let replaced = myDistrict.replace('district', 'region')
+console.log(replaced)
+
+
+
+//Function to return only even numbers
+function myFunction2(arrays){
+    let arrayResult = []
+    for(let i = 0; i < arrays.length; i ++){
+        if(arrays[i] % 2 === 0){
+            arrayResult.push(arrays[i])
+        }
+       
+    }
+     return arrayResult
+}
+console.log(myFunction2([2,3,5,7,9,6,4]))
+
+
+
+//Using shift()
+let letting= ['a', 'b', 'c']
+letting[letting.shift()] // This removes the first element from an array and   it does not need any arguments
+console.log(letting)
+
+
+
+// Also this way
+let age = [5,4,3]
+age.shift()
+console.log(age)
 
